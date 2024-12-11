@@ -4,6 +4,8 @@ var typewriter_speed = 0.05  # Time delay between each character
 var typewriter_text = ""  # The full text to be revealed
 var typewriter_index = 0  # Current index of the text being revealed
 
+# Preload the inventory scene
+var inventory_scene = preload("res://Scenes/inventory.tscn")
 
 # Example story events
 var story_events = [
@@ -84,3 +86,10 @@ func _on_choice_selected(next_event_index):
 	# Move to the next story event
 	current_event = next_event_index
 	display_event(current_event)
+
+
+
+# Show the inventory scene when needed
+func show_inventory():
+	var inventory_instance = inventory_scene.instantiate()
+	add_child(inventory_instance)

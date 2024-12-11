@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://nuy4rr307k57"]
+[gd_scene load_steps=3 format=3 uid="uid://nuy4rr307k57"]
 
 [ext_resource type="FontFile" uid="uid://b4xhtl0pp7bih" path="res://Assets/Font/manrope-medium.otf" id="1_k0wmx"]
+[ext_resource type="Script" path="res://Scripts/inventory.gd" id="1_mf6lj"]
 
 [node name="Inventory" type="Control"]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_mf6lj")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
