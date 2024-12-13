@@ -1,0 +1,5 @@
+[
+	{"name": "Sword", "weight": 3.5, "shape": "rect"},
+	{"name": "Shield", "weight": 5.0, "shape": "rect"},
+	{"name": "Potion", "weight": 0.5, "shape": "rect"}
+]
